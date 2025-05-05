@@ -1,0 +1,1 @@
+-IC:/Users/kjeks/CLionProjects/vulkanlearning/external -IC:/Users/kjeks/Documents/Libraries/mingw64/include -IC:/Users/kjeks/CLionProjects/vulkanlearning/src -IC:/VulkanSDK/1.4.309.0/Include -IC:/Users/kjeks/CLionProjects/vulkanlearning/external/tinyobjloader -I"C:/Users/kjeks/Documents/Libraries/glfw-3.4/include" -IC:/Users/kjeks/Documents/Libraries/glm

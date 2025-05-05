@@ -1,0 +1,4 @@
+C:/Users/kjeks/CLionProjects/vulkanlearning/build/CMakeFiles/vulkanengine.dir
+C:/Users/kjeks/CLionProjects/vulkanlearning/build/CMakeFiles/Shaders.dir
+C:/Users/kjeks/CLionProjects/vulkanlearning/build/CMakeFiles/edit_cache.dir
+C:/Users/kjeks/CLionProjects/vulkanlearning/build/CMakeFiles/rebuild_cache.dir
