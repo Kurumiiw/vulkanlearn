@@ -14,7 +14,9 @@ namespace vi {
             ViWindow(const ViWindow &) = delete;
             ViWindow &operator=(const ViWindow &) = delete;
 
-            bool shouldClose() { return glfwWindowShouldClose(window); }
+            bool shouldClose() { return glfwWindowShouldClose(window); };
+
+            void createWindowSurface(VkInstance instance, VkSurfaceKHR* surface);
 
         private:
             void initWindow();
