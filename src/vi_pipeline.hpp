@@ -7,7 +7,17 @@
 
 namespace vi {
     struct PipelineConfigInfo {
-
+        VkViewport viewport;
+        VkRect2D scissor;
+        VkPipelineInputAssemblyStateCreateInfo inputAssemblyInfo;
+        VkPipelineRasterizationStateCreateInfo rasterizationInfo;
+        VkPipelineMultisampleStateCreateInfo multisampleInfo;
+        VkPipelineColorBlendAttachmentState colorBlendAttachment;
+        VkPipelineColorBlendStateCreateInfo colorBlendInfo;
+        VkPipelineDepthStencilStateCreateInfo depthStencilInfo;
+        VkPipelineLayout pipelineLayout = nullptr;
+        VkRenderPass renderPass = nullptr;
+        uint32_t subpass = 0;
     };
 
     class ViPipeline {
@@ -16,10 +26,12 @@ namespace vi {
                     const std::string& vertPath, 
                     const std::string& fragPath, 
                     const PipelineConfigInfo& configInfo);
-        ~ViPipeline() {}
+        ~ViPipeline();
 
-        //ViPipline(const ViPipeline&) = delete;
-        //void operator&=(const ViPipeline&) = delete;
+        ViPipeline(const ViPipeline&) = delete;
+        void operator&=(const ViPipeline&) = delete;
+        
+        void bind(VkCommandBuffer commandBuffer);
 
         static PipelineConfigInfo defaultPipelineConfigInfo(uint32_t width, uint32_t height);
         
