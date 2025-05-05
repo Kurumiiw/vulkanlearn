@@ -85,12 +85,12 @@ clean: CMakeFiles/Shaders.dir/clean
 CMakeFiles/vulkanengine.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\vulkanengine.dir\build.make CMakeFiles/vulkanengine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\vulkanengine.dir\build.make CMakeFiles/vulkanengine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\kjeks\CLionProjects\vulkanlearning\build\CMakeFiles --progress-num=1,2,3,4 "Built target vulkanengine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\kjeks\CLionProjects\vulkanlearning\build\CMakeFiles --progress-num=3,4,5,6,7 "Built target vulkanengine"
 .PHONY : CMakeFiles/vulkanengine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/vulkanengine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\kjeks\CLionProjects\vulkanlearning\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\kjeks\CLionProjects\vulkanlearning\build\CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/vulkanengine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\kjeks\CLionProjects\vulkanlearning\build\CMakeFiles 0
 .PHONY : CMakeFiles/vulkanengine.dir/rule
@@ -102,7 +102,7 @@ vulkanengine: CMakeFiles/vulkanengine.dir/rule
 # codegen rule for target.
 CMakeFiles/vulkanengine.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\vulkanengine.dir\build.make CMakeFiles/vulkanengine.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\kjeks\CLionProjects\vulkanlearning\build\CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target vulkanengine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\kjeks\CLionProjects\vulkanlearning\build\CMakeFiles --progress-num=3,4,5,6,7 "Finished codegen for target vulkanengine"
 .PHONY : CMakeFiles/vulkanengine.dir/codegen
 
 # clean rule for target.
@@ -117,12 +117,12 @@ CMakeFiles/vulkanengine.dir/clean:
 CMakeFiles/Shaders.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Shaders.dir\build.make CMakeFiles/Shaders.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Shaders.dir\build.make CMakeFiles/Shaders.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\kjeks\CLionProjects\vulkanlearning\build\CMakeFiles --progress-num= "Built target Shaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\kjeks\CLionProjects\vulkanlearning\build\CMakeFiles --progress-num=1,2 "Built target Shaders"
 .PHONY : CMakeFiles/Shaders.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Shaders.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\kjeks\CLionProjects\vulkanlearning\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\kjeks\CLionProjects\vulkanlearning\build\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Shaders.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\kjeks\CLionProjects\vulkanlearning\build\CMakeFiles 0
 .PHONY : CMakeFiles/Shaders.dir/rule
@@ -134,7 +134,7 @@ Shaders: CMakeFiles/Shaders.dir/rule
 # codegen rule for target.
 CMakeFiles/Shaders.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Shaders.dir\build.make CMakeFiles/Shaders.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\kjeks\CLionProjects\vulkanlearning\build\CMakeFiles --progress-num= "Finished codegen for target Shaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\kjeks\CLionProjects\vulkanlearning\build\CMakeFiles --progress-num=1,2 "Finished codegen for target Shaders"
 .PHONY : CMakeFiles/Shaders.dir/codegen
 
 # clean rule for target.

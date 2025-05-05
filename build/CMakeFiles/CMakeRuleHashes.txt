@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+c3f0769670e82f03eeba69c8bb0c63e0 C:/Users/kjeks/CLionProjects/vulkanlearning/shaders/simple.frag.spv
+4157e41070638a061ecf4c017913c66e C:/Users/kjeks/CLionProjects/vulkanlearning/shaders/simple.vert.spv
+8445514f1394f875d7f029a8aa9a172d CMakeFiles/Shaders

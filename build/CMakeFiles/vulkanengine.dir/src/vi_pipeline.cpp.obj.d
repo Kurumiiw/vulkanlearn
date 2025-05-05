@@ -1,36 +1,6 @@
-CMakeFiles/vulkanengine.dir/src/main.cpp.obj: \
- C:\Users\kjeks\CLionProjects\vulkanlearning\src\main.cpp \
- C:\Users\kjeks\CLionProjects\vulkanlearning\src\app.hpp \
- C:\Users\kjeks\CLionProjects\vulkanlearning\src\vi_window.hpp \
- C:/Users/kjeks/Documents/Libraries/glfw-3.4/include/GLFW/glfw3.h \
- C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/stddef.h \
- C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/stddef.h \
- C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
- C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/corecrt.h \
- C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/_mingw.h \
- C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
- C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
- C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/vadefs.h \
- C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
- C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/stdint.h \
- C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/stdint.h \
- C:/VulkanSDK/1.4.309.0/Include/vulkan/vulkan.h \
- C:/VulkanSDK/1.4.309.0/Include/vulkan/vk_platform.h \
- C:/VulkanSDK/1.4.309.0/Include/vulkan/vulkan_core.h \
- C:/VulkanSDK/1.4.309.0/Include/vk_video/vulkan_video_codec_h264std.h \
- C:/VulkanSDK/1.4.309.0/Include/vk_video/vulkan_video_codecs_common.h \
- C:/VulkanSDK/1.4.309.0/Include/vk_video/vulkan_video_codec_h264std_encode.h \
- C:/VulkanSDK/1.4.309.0/Include/vk_video/vulkan_video_codec_h264std.h \
- C:/VulkanSDK/1.4.309.0/Include/vk_video/vulkan_video_codec_h265std.h \
- C:/VulkanSDK/1.4.309.0/Include/vk_video/vulkan_video_codec_h265std_encode.h \
- C:/VulkanSDK/1.4.309.0/Include/vk_video/vulkan_video_codec_h265std.h \
- C:/VulkanSDK/1.4.309.0/Include/vk_video/vulkan_video_codec_h264std_decode.h \
- C:/VulkanSDK/1.4.309.0/Include/vk_video/vulkan_video_codec_h265std_decode.h \
- C:/VulkanSDK/1.4.309.0/Include/vk_video/vulkan_video_codec_av1std.h \
- C:/VulkanSDK/1.4.309.0/Include/vk_video/vulkan_video_codec_av1std_decode.h \
- C:/VulkanSDK/1.4.309.0/Include/vk_video/vulkan_video_codec_av1std.h \
- C:/VulkanSDK/1.4.309.0/Include/vk_video/vulkan_video_codec_av1std_encode.h \
- C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/GL/gl.h \
+CMakeFiles/vulkanengine.dir/src/vi_pipeline.cpp.obj: \
+ C:\Users\kjeks\CLionProjects\vulkanlearning\src\vi_pipeline.cpp \
+ C:\Users\kjeks\CLionProjects\vulkanlearning\src\vi_pipeline.hpp \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/string \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/requires_hosted.h \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -43,6 +13,12 @@ CMakeFiles/vulkanengine.dir/src/main.cpp.obj: \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/postypes.h \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/cwchar \
  C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/wchar.h \
+ C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/corecrt.h \
+ C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
  C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
  C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
@@ -64,6 +40,7 @@ CMakeFiles/vulkanengine.dir/src/main.cpp.obj: \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/clocale \
  C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/locale.h \
+ C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
  C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/stdio.h \
  C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/iosfwd \
@@ -118,18 +95,18 @@ CMakeFiles/vulkanengine.dir/src/main.cpp.obj: \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/basic_string.tcc \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/memory_resource.h \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/cstddef \
+ C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/stddef.h \
+ C:/Users/kjeks/Documents/Libraries/mingw64/x86_64-w64-mingw32/include/stddef.h \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/uses_allocator.h \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/uses_allocator_args.h \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/tuple \
- C:\Users\kjeks\CLionProjects\vulkanlearning\src\vi_pipeline.hpp \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/vector \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/stl_uninitialized.h \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/stl_vector.h \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/stl_bvector.h \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/vector.tcc \
- C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/iostream \
- C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/ostream \
- C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/ostream.h \
+ C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/fstream \
+ C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/istream \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/ios \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/exception \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/exception_ptr.h \
@@ -159,6 +136,12 @@ CMakeFiles/vulkanengine.dir/src/main.cpp.obj: \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/locale_facets.tcc \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/basic_ios.tcc \
+ C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/ostream \
+ C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/ostream.h \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/ostream.tcc \
- C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/istream \
- C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/istream.tcc
+ C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/istream.tcc \
+ C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/codecvt.h \
+ C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+ C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+ C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/fstream.tcc \
+ C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/iostream

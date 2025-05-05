@@ -65,9 +65,23 @@ include CMakeFiles/Shaders.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/Shaders.dir/progress.make
 
+CMakeFiles/Shaders: C:/Users/kjeks/CLionProjects/vulkanlearning/shaders/simple.frag.spv
+CMakeFiles/Shaders: C:/Users/kjeks/CLionProjects/vulkanlearning/shaders/simple.vert.spv
+
+C:/Users/kjeks/CLionProjects/vulkanlearning/shaders/simple.frag.spv: C:/Users/kjeks/CLionProjects/vulkanlearning/shaders/simple.frag
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\kjeks\CLionProjects\vulkanlearning\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C:/Users/kjeks/CLionProjects/vulkanlearning/shaders/simple.frag.spv"
+	C:\VulkanSDK\1.4.309.0\Bin\glslangValidator.exe -V C:/Users/kjeks/CLionProjects/vulkanlearning/shaders/simple.frag -o C:/Users/kjeks/CLionProjects/vulkanlearning/shaders/simple.frag.spv
+
+C:/Users/kjeks/CLionProjects/vulkanlearning/shaders/simple.vert.spv: C:/Users/kjeks/CLionProjects/vulkanlearning/shaders/simple.vert
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\kjeks\CLionProjects\vulkanlearning\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C:/Users/kjeks/CLionProjects/vulkanlearning/shaders/simple.vert.spv"
+	C:\VulkanSDK\1.4.309.0\Bin\glslangValidator.exe -V C:/Users/kjeks/CLionProjects/vulkanlearning/shaders/simple.vert -o C:/Users/kjeks/CLionProjects/vulkanlearning/shaders/simple.vert.spv
+
 CMakeFiles/Shaders.dir/codegen:
 .PHONY : CMakeFiles/Shaders.dir/codegen
 
+Shaders: CMakeFiles/Shaders
+Shaders: C:/Users/kjeks/CLionProjects/vulkanlearning/shaders/simple.frag.spv
+Shaders: C:/Users/kjeks/CLionProjects/vulkanlearning/shaders/simple.vert.spv
 Shaders: CMakeFiles/Shaders.dir/build.make
 .PHONY : Shaders
 

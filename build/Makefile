@@ -189,6 +189,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\vulkanengine.dir\build.make CMakeFiles/vulkanengine.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/vi_pipeline.obj: src/vi_pipeline.cpp.obj
+.PHONY : src/vi_pipeline.obj
+
+# target to build an object file
+src/vi_pipeline.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\vulkanengine.dir\build.make CMakeFiles/vulkanengine.dir/src/vi_pipeline.cpp.obj
+.PHONY : src/vi_pipeline.cpp.obj
+
+src/vi_pipeline.i: src/vi_pipeline.cpp.i
+.PHONY : src/vi_pipeline.i
+
+# target to preprocess a source file
+src/vi_pipeline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\vulkanengine.dir\build.make CMakeFiles/vulkanengine.dir/src/vi_pipeline.cpp.i
+.PHONY : src/vi_pipeline.cpp.i
+
+src/vi_pipeline.s: src/vi_pipeline.cpp.s
+.PHONY : src/vi_pipeline.s
+
+# target to generate assembly for a file
+src/vi_pipeline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\vulkanengine.dir\build.make CMakeFiles/vulkanengine.dir/src/vi_pipeline.cpp.s
+.PHONY : src/vi_pipeline.cpp.s
+
 src/vi_window.obj: src/vi_window.cpp.obj
 .PHONY : src/vi_window.obj
 
@@ -229,6 +253,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/vi_pipeline.obj
+	@echo ... src/vi_pipeline.i
+	@echo ... src/vi_pipeline.s
 	@echo ... src/vi_window.obj
 	@echo ... src/vi_window.i
 	@echo ... src/vi_window.s

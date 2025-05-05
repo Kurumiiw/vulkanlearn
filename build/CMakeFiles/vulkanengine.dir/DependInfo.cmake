@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/kjeks/CLionProjects/vulkanlearning/src/app.cpp" "CMakeFiles/vulkanengine.dir/src/app.cpp.obj" "gcc" "CMakeFiles/vulkanengine.dir/src/app.cpp.obj.d"
   "C:/Users/kjeks/CLionProjects/vulkanlearning/src/main.cpp" "CMakeFiles/vulkanengine.dir/src/main.cpp.obj" "gcc" "CMakeFiles/vulkanengine.dir/src/main.cpp.obj.d"
+  "C:/Users/kjeks/CLionProjects/vulkanlearning/src/vi_pipeline.cpp" "CMakeFiles/vulkanengine.dir/src/vi_pipeline.cpp.obj" "gcc" "CMakeFiles/vulkanengine.dir/src/vi_pipeline.cpp.obj.d"
   "C:/Users/kjeks/CLionProjects/vulkanlearning/src/vi_window.cpp" "CMakeFiles/vulkanengine.dir/src/vi_window.cpp.obj" "gcc" "CMakeFiles/vulkanengine.dir/src/vi_window.cpp.obj.d"
   )
 

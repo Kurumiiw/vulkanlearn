@@ -120,4 +120,10 @@ CMakeFiles/vulkanengine.dir/src/app.cpp.obj: \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/cstddef \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/uses_allocator.h \
  C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/uses_allocator_args.h \
- C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/tuple
+ C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/tuple \
+ C:\Users\kjeks\CLionProjects\vulkanlearning\src\vi_pipeline.hpp \
+ C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/vector \
+ C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/stl_uninitialized.h \
+ C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/stl_vector.h \
+ C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/stl_bvector.h \
+ C:/Users/kjeks/Documents/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/vector.tcc

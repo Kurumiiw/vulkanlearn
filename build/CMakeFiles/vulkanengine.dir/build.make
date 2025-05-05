@@ -101,11 +101,26 @@ CMakeFiles/vulkanengine.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/vulkanengine.dir/src/main.cpp.s"
 	C:\Users\kjeks\Documents\Libraries\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\kjeks\CLionProjects\vulkanlearning\src\main.cpp -o CMakeFiles\vulkanengine.dir\src\main.cpp.s
 
+CMakeFiles/vulkanengine.dir/src/vi_pipeline.cpp.obj: CMakeFiles/vulkanengine.dir/flags.make
+CMakeFiles/vulkanengine.dir/src/vi_pipeline.cpp.obj: CMakeFiles/vulkanengine.dir/includes_CXX.rsp
+CMakeFiles/vulkanengine.dir/src/vi_pipeline.cpp.obj: C:/Users/kjeks/CLionProjects/vulkanlearning/src/vi_pipeline.cpp
+CMakeFiles/vulkanengine.dir/src/vi_pipeline.cpp.obj: CMakeFiles/vulkanengine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\kjeks\CLionProjects\vulkanlearning\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/vulkanengine.dir/src/vi_pipeline.cpp.obj"
+	C:\Users\kjeks\Documents\Libraries\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/vulkanengine.dir/src/vi_pipeline.cpp.obj -MF CMakeFiles\vulkanengine.dir\src\vi_pipeline.cpp.obj.d -o CMakeFiles\vulkanengine.dir\src\vi_pipeline.cpp.obj -c C:\Users\kjeks\CLionProjects\vulkanlearning\src\vi_pipeline.cpp
+
+CMakeFiles/vulkanengine.dir/src/vi_pipeline.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/vulkanengine.dir/src/vi_pipeline.cpp.i"
+	C:\Users\kjeks\Documents\Libraries\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\kjeks\CLionProjects\vulkanlearning\src\vi_pipeline.cpp > CMakeFiles\vulkanengine.dir\src\vi_pipeline.cpp.i
+
+CMakeFiles/vulkanengine.dir/src/vi_pipeline.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/vulkanengine.dir/src/vi_pipeline.cpp.s"
+	C:\Users\kjeks\Documents\Libraries\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\kjeks\CLionProjects\vulkanlearning\src\vi_pipeline.cpp -o CMakeFiles\vulkanengine.dir\src\vi_pipeline.cpp.s
+
 CMakeFiles/vulkanengine.dir/src/vi_window.cpp.obj: CMakeFiles/vulkanengine.dir/flags.make
 CMakeFiles/vulkanengine.dir/src/vi_window.cpp.obj: CMakeFiles/vulkanengine.dir/includes_CXX.rsp
 CMakeFiles/vulkanengine.dir/src/vi_window.cpp.obj: C:/Users/kjeks/CLionProjects/vulkanlearning/src/vi_window.cpp
 CMakeFiles/vulkanengine.dir/src/vi_window.cpp.obj: CMakeFiles/vulkanengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\kjeks\CLionProjects\vulkanlearning\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/vulkanengine.dir/src/vi_window.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\kjeks\CLionProjects\vulkanlearning\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/vulkanengine.dir/src/vi_window.cpp.obj"
 	C:\Users\kjeks\Documents\Libraries\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/vulkanengine.dir/src/vi_window.cpp.obj -MF CMakeFiles\vulkanengine.dir\src\vi_window.cpp.obj.d -o CMakeFiles\vulkanengine.dir\src\vi_window.cpp.obj -c C:\Users\kjeks\CLionProjects\vulkanlearning\src\vi_window.cpp
 
 CMakeFiles/vulkanengine.dir/src/vi_window.cpp.i: cmake_force
@@ -120,6 +135,7 @@ CMakeFiles/vulkanengine.dir/src/vi_window.cpp.s: cmake_force
 vulkanengine_OBJECTS = \
 "CMakeFiles/vulkanengine.dir/src/app.cpp.obj" \
 "CMakeFiles/vulkanengine.dir/src/main.cpp.obj" \
+"CMakeFiles/vulkanengine.dir/src/vi_pipeline.cpp.obj" \
 "CMakeFiles/vulkanengine.dir/src/vi_window.cpp.obj"
 
 # External object files for target vulkanengine
@@ -127,12 +143,13 @@ vulkanengine_EXTERNAL_OBJECTS =
 
 vulkanengine.exe: CMakeFiles/vulkanengine.dir/src/app.cpp.obj
 vulkanengine.exe: CMakeFiles/vulkanengine.dir/src/main.cpp.obj
+vulkanengine.exe: CMakeFiles/vulkanengine.dir/src/vi_pipeline.cpp.obj
 vulkanengine.exe: CMakeFiles/vulkanengine.dir/src/vi_window.cpp.obj
 vulkanengine.exe: CMakeFiles/vulkanengine.dir/build.make
 vulkanengine.exe: CMakeFiles/vulkanengine.dir/linkLibs.rsp
 vulkanengine.exe: CMakeFiles/vulkanengine.dir/objects1.rsp
 vulkanengine.exe: CMakeFiles/vulkanengine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\kjeks\CLionProjects\vulkanlearning\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable vulkanengine.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\kjeks\CLionProjects\vulkanlearning\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable vulkanengine.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\vulkanengine.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

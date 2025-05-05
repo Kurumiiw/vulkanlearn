@@ -8,22 +8,22 @@
 namespace vi {
     class ViWindow {
         public:
-        ViWindow(int w, int h, std::string title);
-        ~ViWindow();
+            ViWindow(int w, int h, std::string title);
+            ~ViWindow();
 
-        ViWindow(const ViWindow &) = delete;
-        ViWindow &operator=(const ViWindow &) = delete;
+            ViWindow(const ViWindow &) = delete;
+            ViWindow &operator=(const ViWindow &) = delete;
 
-        bool shouldClose() { return glfwWindowShouldClose(window); }
+            bool shouldClose() { return glfwWindowShouldClose(window); }
 
         private:
-        void initWindow();
-        
-        const int width;
-        const int height;
+            void initWindow();
+            
+            const int width;
+            const int height;
 
-        std::string windowTitle;
+            std::string windowTitle;
 
-        GLFWwindow* window;
+            GLFWwindow* window;
     };
 }
