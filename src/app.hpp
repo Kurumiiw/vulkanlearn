@@ -4,6 +4,7 @@
 #include "vi_pipeline.hpp"
 #include "vi_swap_chain.hpp"
 #include "vi_window.hpp"
+#include "vi_mesh.hpp"
 
 //std
 #include <memory>
@@ -23,6 +24,7 @@ namespace vi {
 
             void run();
         private:
+            void loadMeshes();
             void createPipelineLayout();
             void createPipeline();
             void createCommandBuffers();
@@ -34,5 +36,6 @@ namespace vi {
             std::unique_ptr<ViPipeline> viPipeline;
             VkPipelineLayout pipelineLayout;
             std::vector<VkCommandBuffer> commandBuffers;
+            std::unique_ptr<ViMesh> mesh;
     };
 }

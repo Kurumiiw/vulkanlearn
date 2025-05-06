@@ -5,6 +5,8 @@
 
 namespace vi {
     App::App() {
+        loadMeshes();
+
         createPipelineLayout();
         createPipeline();
         createCommandBuffers();
@@ -83,7 +85,9 @@ namespace vi {
             vkCmdBeginRenderPass(commandBuffers[i], &renderPassInfo, VK_SUBPASS_CONTENTS_INLINE);
 
             viPipeline->bind(commandBuffers[i]);
-            vkCmdDraw(commandBuffers[i], 3, 1, 0, 0);
+
+            mesh->bind(commandBuffers[i]);
+            mesh->draw(commandBuffers[i]);
 
             vkCmdEndRenderPass(commandBuffers[i]);
             if(vkEndCommandBuffer(commandBuffers[i]) != VK_SUCCESS) {
@@ -104,5 +108,15 @@ namespace vi {
         if(result != VK_SUCCESS) {
             throw std::runtime_error("[Vi] Failed to present swap chain image");
         }
+    }
+
+    void App::loadMeshes() {
+        std::vector<ViMesh::Vertex> vertices {
+            {{ 0.0f, -0.5f}},
+            {{ 0.5f,  0.5f}},
+            {{-0.5f,  0.5f}}
+        };
+
+        mesh = std::make_unique<ViMesh>(viDevice, vertices);
     }
 }
