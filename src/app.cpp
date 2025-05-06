@@ -1,9 +1,19 @@
 #include "app.hpp"
 
+#define GLM_FORCE_RADIANS
+#define GLM_FORCE_DEPTH_ZERO_TO_ONE
+#include <glm/glm.hpp>
+
 #include <stdexcept>
 #include <array>
 
 namespace vi {
+
+    struct ExamplePushConstantData {
+        glm::vec2 offset;
+        alignas(16) glm::vec3 color; // Data alignment is important for a lot of data in Vulkan.  See the spec.
+    };
+
     App::App() {
         loadMeshes();
 
@@ -25,13 +35,18 @@ namespace vi {
         vkDeviceWaitIdle(viDevice.device());
     }
 
-    void App::createPipelineLayout() {
+    void App::createPipelineLayout() {        
+        VkPushConstantRange pushConstantRange{};
+        pushConstantRange.offset = 0;
+        pushConstantRange.size = sizeof(ExamplePushConstantData);
+        pushConstantRange.stageFlags = VK_SHADER_STAGE_VERTEX_BIT | VK_SHADER_STAGE_FRAGMENT_BIT;
+
         VkPipelineLayoutCreateInfo pipelineLayoutInfo{};
         pipelineLayoutInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO;
         pipelineLayoutInfo.setLayoutCount = 0;
         pipelineLayoutInfo.pSetLayouts = nullptr;
-        pipelineLayoutInfo.pushConstantRangeCount = 0;
-        pipelineLayoutInfo.pPushConstantRanges = nullptr;
+        pipelineLayoutInfo.pushConstantRangeCount = 1;
+        pipelineLayoutInfo.pPushConstantRanges = &pushConstantRange;
 
         if(vkCreatePipelineLayout(viDevice.device(), &pipelineLayoutInfo, nullptr, &pipelineLayout) != VK_SUCCESS) {
             throw std::runtime_error("[Vi] Failed to create pipeline layout");
@@ -49,7 +64,7 @@ namespace vi {
     
     void App::createCommandBuffers() {
         commandBuffers.resize(viSwapChain.imageCount());
-    
+
         VkCommandBufferAllocateInfo allocInfo{};
         allocInfo.sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO;
         allocInfo.level = VK_COMMAND_BUFFER_LEVEL_PRIMARY;
@@ -77,7 +92,7 @@ namespace vi {
             renderPassInfo.renderArea.extent = viSwapChain.getSwapChainExtent();
 
             std::array<VkClearValue, 2> clearValues{};
-            clearValues[0].color = {0.1f, 0.1f, 0.1f, 1.0f};
+            clearValues[0].color = {0.1f, 0.1f, 0.3f, 1.0f};
             clearValues[1].depthStencil = {1.0f, 0};
             renderPassInfo.clearValueCount = static_cast<uint32_t>(clearValues.size());
             renderPassInfo.pClearValues = clearValues.data();
@@ -85,11 +100,25 @@ namespace vi {
             vkCmdBeginRenderPass(commandBuffers[i], &renderPassInfo, VK_SUBPASS_CONTENTS_INLINE);
 
             viPipeline->bind(commandBuffers[i]);
-
             mesh->bind(commandBuffers[i]);
-            mesh->draw(commandBuffers[i]);
+            
+            for(int j = 0; j < 11; j++) {
+                ExamplePushConstantData pushData{};
+                pushData.offset = {0.1f + j * 0.05f, 0.0f - j * 0.05f};
+                pushData.color = {1.0f - 0.1 * j, 1.0f - 0.1 * j, 1.0f - 0.1 * j};
+
+                vkCmdPushConstants(commandBuffers[i], 
+                                   pipelineLayout, 
+                                   VK_SHADER_STAGE_VERTEX_BIT | VK_SHADER_STAGE_FRAGMENT_BIT,
+                                   0,
+                                   sizeof(ExamplePushConstantData),
+                                   &pushData);
+                                   
+                mesh->draw(commandBuffers[i]);
+            }
 
             vkCmdEndRenderPass(commandBuffers[i]);
+            
             if(vkEndCommandBuffer(commandBuffers[i]) != VK_SUCCESS) {
                 throw std::runtime_error("[Vi] Failed to record command buffer");
             }
