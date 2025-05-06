@@ -35,10 +35,10 @@ namespace vi {
     }
 
     void ViMesh::bind(VkCommandBuffer commandBuffer) {
-        VkBuffer buffers[] = {vertexBuffer};
-        VkDeviceSize offsets[] = {0};
+        VkBuffer buffers[] = {vertexBuffer, vertexBuffer};
+        VkDeviceSize offsets[] = {0, 0};
 
-        vkCmdBindVertexBuffers(commandBuffer, 0, 1, buffers, offsets);
+        vkCmdBindVertexBuffers(commandBuffer, 0, 2, buffers, offsets);
     }
     
     void ViMesh::draw(VkCommandBuffer commandBuffer) {
@@ -47,21 +47,30 @@ namespace vi {
 
     
     std::vector<VkVertexInputBindingDescription> ViMesh::Vertex::getBindingDescriptions() {
-        std::vector<VkVertexInputBindingDescription> bindingDescriptions(1);
+        std::vector<VkVertexInputBindingDescription> bindingDescriptions(2);
 
         bindingDescriptions[0].binding   = 0;
         bindingDescriptions[0].stride    = sizeof(Vertex);
         bindingDescriptions[0].inputRate = VK_VERTEX_INPUT_RATE_VERTEX;
+
+        bindingDescriptions[1].binding   = 1;
+        bindingDescriptions[1].stride    = sizeof(Vertex);
+        bindingDescriptions[1].inputRate = VK_VERTEX_INPUT_RATE_VERTEX;
         return bindingDescriptions;
     }
 
     std::vector<VkVertexInputAttributeDescription> ViMesh::Vertex::getAttributeDescriptions() {
-        std::vector<VkVertexInputAttributeDescription> attributeDescriptions(1);
+        std::vector<VkVertexInputAttributeDescription> attributeDescriptions(2);
 
         attributeDescriptions[0].binding   = 0;
         attributeDescriptions[0].location  = 0;
         attributeDescriptions[0].format    = VK_FORMAT_R32G32_SFLOAT;
         attributeDescriptions[0].offset    = 0;
+        
+        attributeDescriptions[1].binding   = 1;
+        attributeDescriptions[1].location  = 1;
+        attributeDescriptions[1].format    = VK_FORMAT_R32G32B32_SFLOAT;
+        attributeDescriptions[1].offset    = offsetof(ViMesh::Vertex, color);
         return attributeDescriptions;
     }
 }

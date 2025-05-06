@@ -112,9 +112,9 @@ namespace vi {
 
     void App::loadMeshes() {
         std::vector<ViMesh::Vertex> vertices {
-            {{ 0.0f, -0.5f}},
-            {{ 0.5f,  0.5f}},
-            {{-0.5f,  0.5f}}
+            {{ 0.0f, -0.5f}, {1.0f, 0.0f, 0.0f}},
+            {{ 0.5f,  0.5f}, {0.0f, 1.0f, 0.0f}},
+            {{-0.5f,  0.5f}, {0.0f, 0.0f, 1.0f}}
         };
 
         mesh = std::make_unique<ViMesh>(viDevice, vertices);
